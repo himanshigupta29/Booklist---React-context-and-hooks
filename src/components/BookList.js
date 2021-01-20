@@ -8,7 +8,7 @@ const BookList = () => {
 
     return books.length ? (
 
-        <div>
+        <div className="book-list">
 
             <ul>
             {
