@@ -27,7 +27,7 @@ const BookForm = () => {
             <input type = "text" 
             required
             value = {title} 
-            placeholder="Book title"
+            placeholder="Book Title"
             onChange = { (e) => setTitle(e.target.value) } />
 
             <input type = "text"
