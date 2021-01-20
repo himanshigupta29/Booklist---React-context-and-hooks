@@ -1,6 +1,7 @@
 import BooksContextProvider from "./contexts/BooksContext";
 import Navbar from './components/Navbar';
 import BookList from './components/BookList';
+import BookForm from './components/BookForm';
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <BooksContextProvider>
         <Navbar></Navbar>
         <BookList></BookList>
+        <BookForm></BookForm>
       </BooksContextProvider>
     </div>
   );
