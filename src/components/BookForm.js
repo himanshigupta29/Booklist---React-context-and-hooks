@@ -4,7 +4,11 @@ import {BooksContext} from '../contexts/BooksContext';
 const BookForm = () => {
 
 
-    const {addBook} = useContext(BooksContext);
+    // const {addBook} = useContext(BooksContext);
+
+    const {dispatch} = useContext(BooksContext);
+
+    
 
     const [title, setTitle] = useState('');
     const [author, setAuthor] = useState('');
@@ -12,7 +16,10 @@ const BookForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        addBook(title, author);
+
+        dispatch({type: 'ADD_BOOK', book: {title, author}});
+        // addBook(title, author);
+
         setTitle('');
         setAuthor('');
 
